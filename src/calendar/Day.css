@@ -11,3 +11,6 @@
 .Day.checked {
   background-color: lime;
 }
+.Day.missed {
+  background-color: red;
+}

@@ -75,6 +75,8 @@ class Month extends Component {
       let classNames = "" 
       if (this.state.checks.indexOf(d) > -1){
         classNames = "checked" 
+      } else if (today.getDate() > d) {
+        classNames = "missed"
       }
       days.push(<Day day={d} key={d} classNames={classNames} handleClick={this.handleDayClick}/>)
     }
